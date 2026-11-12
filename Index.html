@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+< lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muzaffar Public School</title>
+<style>
+:root {
+  --blue: #123b70;
+  --gold: #f4bd43;
+  --light: #f3f7fc;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #263348;
+  background: white;
+  line-height: 1.8;
+}
+header {
+  background: var(--blue);
+  color: white;
+  padding: 14px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.logo { font-size: 21px; font-weight: bold; }
+.logo span { color: var(--gold); }
+nav { display: flex; flex-wrap: wrap; gap: 16px; }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+nav a:hover { color: var(--gold); }
+.hero {
+  min-height: 430px;
+  padding: 65px 8%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(120deg, #123b70, #286da3);
+  color: white;
+}
+.hero-content { max-width: 650px; }
+.hero h1 { font-size: clamp(30px, 5vw, 48px); line-height: 1.4; }
+.hero p { font-size: 18px; }
+.btn {
+  display: inline-block;
+  padding: 11px 23px;
+  border: 0;
+  border-radius: 7px;
+  background: var(--gold);
+  color: #18283c;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 5px;
+}
+.btn-outline {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+}
+section { padding: 55px 7%; }
+.section-title { text-align: center; margin-bottom: 30px; }
+.section-title h2 { color: var(--blue); font-size: 29px; }
+.section-title p { color: #69778b; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+}
+.card {
+  padding: 23px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px #183d6812;
+  border: 1px solid #e8edf4;
+}
+.card .emoji { font-size: 34px; }
+.card h3 { color: var(--blue); }
+.about {
+  background: var(--light);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  align-items: center;
+}
+.about-box {
+  background: var(--blue);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+.about-box .big { font-size: 65px; }
+.notice {
+  border-right: 4px solid var(--gold);
+  background: var(--light);
+  padding: 12px 17px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+}
+form {
+  max-width: 700px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 12px;
+  background: var(--light);
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+label { display: block; font-weight: bold; margin-bottom: 5px; }
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: white;
+  font: inherit;
+}
+textarea { resize: vertical; }
+#formMessage { color: #176447; font-weight: bold; }
+.contact { background: var(--light); }
+footer {
+  background: #0c2748;
+  color: white;
+  padding: 28px 7%;
+  text-align: center;
+}
+footer a { color: var(--gold); }
+.small { font-size: 13px; color: #cbd5e1; }
+@media(max-width:600px) {
+  header { justify-content: center; text-align: center; }
+  nav { justify-content: center; gap: 10px 14px; }
+  .hero { padding: 45px 6%; }
+  section { padding: 40px 5%; }
+}
+</style>
+</head>
+<bo>
+
+<header>
+  <div class="logo">🎓 MUZAFFAR <span>SCHOOL</span></div>
+  <nav>
+    <a href="#home">ہوم</a>
+    <a href="#about">تعارف</a>
+    <a href="#classes">کلاسز</a>
+    <a href="#teachers">اساتذہ</a>
+    <a href="#notices">نوٹس</a>
+    <a href="#admission">داخلہ</a>
+    <a href="#contact">رابطہ</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p>خوش آمدید — Welcome to Our School</p>
+    <h1>MUZAFFAR PUBLIC SCHOOL</h1>
+    <p>
+      تعلیم ہماری پہچان، کردار ہماری طاقت،
+      اور کامیابی ہمارا مقصد ہے۔
+    </p>
+    <a class="btn" href="#admission">داخلے کے لیے اپلائی کریں</a>
+    <a class="btn btn-outline" href="#about">ہمارے بارے میں</a>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div>
+    <h2>ہمارے اسکول کے بارے میں</h2>
+    <p>
+      ہمارا مقصد طلبہ کو معیاری تعلیم دینا،
+      ان میں اچھے اخلاق پیدا کرنا اور انہیں
+      مستقبل کے لیے تیار کرنا ہے۔
+    </p>
+    <p>
+      ہم پڑھائی، نظم و ضبط، کھیلوں اور
+      عملی سرگرمیوں پر توجہ دیتے ہیں۔
+    </p>
+  </div>
+  <div class="about-box">
+    <div class="big">🏫</div>
+    <h2>روشن مستقبل کی طرف</h2>
+    <p>سیکھیں، آگے بڑھیں، کامیاب ہوں!</p>
+  </div>
+</section>
+
+<section id="classes">
+  <div class="section-title">
+    <h2>ہماری کلاسز</h2>
+    <p>اپنی تعلیم کا سفر یہاں سے شروع کریں۔</p>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <div class="emoji">📖</div>
+      <h3>پرائمری کلاسز</h3>
+      <p>کلاس اول سے پنجم تک بنیادی تعلیم اور اچھی عادات۔</p>
+    </article>
+    <article class="card">
+      <div class="emoji">🔬</div>
+      <h3>مڈل کلاسز</h3>
+      <p>کلاس ششم سے ہشتم تک سائنس، ریاضی اور زبانیں۔</p>
+    </article>
+    <article class="card">
+      <div class="emoji">🎓</div>
+      <h3>سیکنڈری کلاسز</h3>
+      <p>کلاس نہم اور دہم کے لیے امتحانی تیاری۔</p>
+    </article>
+  </div>
+</section>
+
+<section id="teachers" class="about">
+  <div class="section-title">
+    <h2>ہمارے اساتذہ</h2>
+    <p>محنتی اساتذہ، بہتر تعلیم۔</p>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <div class="emoji">👨‍🏫</div>
+      <h3>پرنسپل</h3>
+      <p>اسکول کی نگرانی اور طلبہ کی رہنمائی۔</p>
+    </article>
+    <article class="card">
+      <div class="emoji">🧑‍🏫</div>
+      <h3>سائنس ٹیچر</h3>
+      <p>سائنس کے تصورات اور عملی تعلیم۔</p>
+    </article>
+    <article class="card">
+      <div class="emoji">📐</div>
+      <h3>ریاضی ٹیچر</h3>
+      <p>ریاضی اور مسائل حل کرنے کی مشق۔</p>
+    </article>
+  </div>
+  <p>نوٹ: یہ نمونہ ہے۔ اصل اساتذہ کے نام اور تصاویر شامل کریں۔</p>
+</section>
+
+<section id="notices">
+  <div class="section-title">
+    <h2>نوٹس اور اعلانات</h2>
+    <p>اسکول کی اہم معلومات۔</p>
+  </div>
+  <div class="notice">
+    <strong>📢 داخلے:</strong>
+    داخلے کے لیے اسکول انتظامیہ سے رابطہ کریں۔
+  </div>
+  <div class="notice">
+    <strong>📅 امتحانات:</strong>
+    امتحانات کی تاریخیں اسکول انتظامیہ جاری کرے گی۔
+  </div>
+  <div class="notice">
+    <strong>📚 والدین کے لیے:</strong>
+    بچوں کی تعلیمی پیش رفت کے لیے اساتذہ سے رابطے میں رہیں۔
+  </div>
+</section>
+
+<section id="admission">
+  <div class="section-title">
+    <h2>آن لائن داخلہ فارم</h2>
+    <p>اپنی معلومات درج کرکے درخواست تیار کریں۔</p>
+  </div>
+
+  <form id="admissionForm">
+    <div class="form-grid">
+      <div>
+        <label for="student">طالب علم کا نام</label>
+        <input id="student" name="student" required
+          placeholder="پورا نام">
+      </div>
+      <div>
+        <label for="guardian">والد یا سرپرست کا نام</label>
+        <input id="guardian" name="guardian" required
+          placeholder="سرپرست کا نام">
+      </div>
+      <div>
+        <label for="class">داخلہ کس کلاس میں چاہیے؟</label>
+        <select id="class" name="class" required>
+          <option value="">کلاس منتخب کریں</option>
+          <option>اول</option>
+          <option>دوم</option>
+          <option>سوم</option>
+          <option>چہارم</option>
+          <option>پنجم</option>
+          <option>ششم</option>
+          <option>ہفتم</option>
+          <option>ہشتم</option>
+          <option>نہم</option>
+          <option>دہم</option>
+        </select>
+      </div>
+      <div>
+        <label for="phone">رابطہ نمبر</label>
+        <input id="phone" name="phone" type="tel" required
+          placeholder="03XXXXXXXXX">
+      </div>
+    </div>
+    <p>
+      <label for="address">پتہ</label>
+      <textarea id="address" name="address" rows="3"
+        required placeholder="اپنا پتہ درج کریں"></textarea>
+    </p>
+    <button class="btn" type="submit">درخواست تیار کریں</button>
+    <p id="formMessage" role="status" aria-live="polite"></p>
+  </form>
+</section>
+
+<section id="contact" class="contact">
+  <div class="section-title">
+    <h2>ہم سے رابطہ کریں</h2>
+    <p>مزید معلومات کے لیے اسکول انتظامیہ سے رابطہ کریں۔</p>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <div class="emoji">📍</div>
+      <h3>پتہ</h3>
+      <p>یہاں اسکول کا مکمل پتہ درج کریں۔</p>
+    </article>
+    <article class="card">
+      <div class="emoji">📞</div>
+      <h3>فون</h3>
+      <p>یہاں اسکول کا رابطہ نمبر درج کریں۔</p>
+    </article>
+    <article class="card">
+      <div class="emoji">✉️</div>
+      <h3>ای میل</h3>
+      <p>یہاں اسکول کی ای میل درج کریں۔</p>
+    </article>
+  </div>
+</section>
+</main>
+
+<footer>
+  <h3>MUZAFFAR PUBLIC SCHOOL</h3>
+  <p>تعلیم، تربیت اور روشن مستقبل۔</p>
+  <p class="small">
+    © <span id="year"></span> Muzaffar Public School.
+    All rights reserved.
+  </p>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+document.getElementById("admissionForm").addEventListener(
+  "submit", function(event) {
+    event.preventDefault();
+
+    const student = document.getElementById("student").value.trim();
+    const guardian = document.getElementById("guardian").value.trim();
+    const className = document.getElementById("class").value;
+    const phone = document.getElementById("phone").value.trim();
+    const address = document.getElementById("address").value.trim();
+
+    if (!student || !guardian || !className || !phone || !address) {
+      document.getElementById("formMessage").textContent =
+        "براہ کرم تمام خانے پُر کریں۔";
+      return;
+    }
+
+    const application =
+      "داخلہ درخواست - Muzaffar Public School\n" +
+      "طالب علم: " + student + "\n" +
+      "سرپرست: " + guardian + "\n" +
+      "کلاس: " + className + "\n" +
+      "رابطہ: " + phone + "\n" +
+      "پتہ: " + address;
+
+    const blob = new Blob(["\uFEFF" + application], {
+      type: "text/plain;charset=utf-8"
+    });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "admission-application.txt";
+    link.click();
+    URL.revokeObjectURL(url);
+
+    document.getElementById("formMessage").textContent =
+      "آپ کی درخواست کی فائل تیار ہوگئی ہے۔ اسے اسکول انتظامیہ کو بھیجیں۔";
+  }
+);
+</script>
+
+</bo
